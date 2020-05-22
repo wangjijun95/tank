@@ -1,17 +1,19 @@
 package com.jijun.tank;
 
+import com.jijun.tank.cor.GameObject;
+
 import java.awt.Graphics;
 import java.awt.Rectangle;
 
 
-public class Bullet extends GameObject{
+public class Bullet extends GameObject {
 	private static final int SPEED = 10;
 	private boolean living = true;
 	private GameModel gm = null;
 	public static int WIDTH = ResourceMgr.bulletD.getWidth();
 	public static int HEIGHT = ResourceMgr.bulletD.getHeight();
-	private Group group = Group.GOOD;
-	Rectangle rec = new Rectangle();
+	public Group group = Group.GOOD;
+	public Rectangle rec = new Rectangle();
 	
 	private int x,y;
 	private Dir dir;
@@ -26,7 +28,7 @@ public class Bullet extends GameObject{
 		rec.y = this.y;
 		rec.width = WIDTH;
 		rec.height = HEIGHT;
-		gm.bullets.add(this);
+		gm.objects.add(this);
 	}
 	
 	public Group getGroup() {
@@ -62,7 +64,7 @@ public class Bullet extends GameObject{
 	
 	public void paint(Graphics g){
 		if(!living){
-			gm.bullets.remove(this);
+			gm.objects.remove(this);
 		}
 		switch (dir) {
 		case DOWN:
@@ -105,17 +107,8 @@ public class Bullet extends GameObject{
 		if(x > TankFrame.GAME_WIDTH || x < 0 || y > TankFrame.GAME_HEIGHT || y < 0)
 			living = false;
 	}
-	public void collideWith(Tank tank) {
-		if(tank.getGroup() == this.group) return;
-		if(this.rec.intersects(tank.rec)) {
-			tank.die();
-			this.die();
-			int eX = tank.getX() + Tank.WIDTH/2 - Explode.WIDTH/2;
-			int eY = tank.getY() + Tank.HEIGHT/2 - Explode.HEIGHT/2;
-			gm.explodes.add(new Explode(eX, eY, gm));
-		}
-	}
-	private void die() {
+
+	public void die() {
 		this.living = false;
 		
 	}

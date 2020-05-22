@@ -1,4 +1,4 @@
-package com.jijun.tank;
+package com.jijun.tank.cor;
 
 import java.awt.*;
 

@@ -4,10 +4,12 @@ import java.awt.Graphics;
 import java.awt.Rectangle;
 import java.util.Random;
 
+import com.jijun.tank.cor.GameObject;
 import com.jijun.tank.strategy.FireStrategy;
 
-public class Tank extends GameObject{
+public class Tank extends GameObject {
 	private int x=200, y=200;
+	int oldX,oldY;
 	Dir dir = Dir.DOWN;
 	private static final int SPEED = 5;
 	private boolean moving = true;
@@ -17,7 +19,7 @@ public class Tank extends GameObject{
 	public static int WIDTH = ResourceMgr.goodTankU.getWidth();
 	public static int HEIGHT = ResourceMgr.goodTankU.getHeight();
 	private Group group ;
-	Rectangle rec = new Rectangle();
+	public Rectangle rec = new Rectangle();
 	
 	private Random random = new Random();
 	
@@ -34,7 +36,7 @@ public class Tank extends GameObject{
 		
 		if(group == Group.GOOD){
 			try {
-				String goodName = (String)PropertyMgr.getObject("goodFS1");
+				String goodName = (String)PropertyMgr.getObject("goodFS");
 				fs = (FireStrategy)Class.forName(goodName).newInstance();
 			} catch (Exception e) {
 				e.printStackTrace();
@@ -97,7 +99,7 @@ public class Tank extends GameObject{
 		return SPEED;
 	}
 	public void paint(Graphics g) {
-		if(!living) gm.tanks.remove(this);
+		if(!living) gm.objects.remove(this);
 		switch (dir) {
 		case LIFT:
 			g.drawImage(this.group == Group.GOOD ? ResourceMgr.goodTankL:ResourceMgr.badTankL, this.x, this.y, null);
@@ -124,6 +126,9 @@ public class Tank extends GameObject{
 		if(!moving){
 			return;
 		}
+
+		oldX = x;
+		oldY = y;
 		switch (this.dir){
 			case LIFT:
 				x-=SPEED;
@@ -140,7 +145,8 @@ public class Tank extends GameObject{
 			default:
 				break;
 		}
-		
+
+
 		if(this.x < 2){this.x = 2;}
 		if(this.x > TankFrame.GAME_WIDTH-this.WIDTH-2){this.x = TankFrame.GAME_WIDTH - this.WIDTH-2;}
 		if(this.y < 28){this.y = 28;}
@@ -148,7 +154,8 @@ public class Tank extends GameObject{
 		
 		rec.x = x;
 		rec.y = y;
-		
+
+
 		if(this.group == Group.BAD && random.nextInt(100) > 95) {
 			this.fire();
 		}
@@ -170,6 +177,9 @@ public class Tank extends GameObject{
 		this.living = false;
 	}
 
-	
-	
+
+	public void backXY() {
+		x = oldX;
+		y = oldY;
+	}
 }
