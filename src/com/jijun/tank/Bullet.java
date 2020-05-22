@@ -9,7 +9,6 @@ import java.awt.Rectangle;
 public class Bullet extends GameObject {
 	private static final int SPEED = 10;
 	private boolean living = true;
-	private GameModel gm = null;
 	public static int WIDTH = ResourceMgr.bulletD.getWidth();
 	public static int HEIGHT = ResourceMgr.bulletD.getHeight();
 	public Group group = Group.GOOD;
@@ -17,18 +16,17 @@ public class Bullet extends GameObject {
 	
 	private int x,y;
 	private Dir dir;
-	public Bullet(int x, int y, Dir dir, Group group, GameModel gm) {
+	public Bullet(int x, int y, Dir dir, Group group) {
 		super();
 		this.x = x;
 		this.y = y;
 		this.dir = dir;
 		this.group = group;
-		this.gm = gm;
 		rec.x = this.x;
 		rec.y = this.y;
 		rec.width = WIDTH;
 		rec.height = HEIGHT;
-		gm.objects.add(this);
+		GameModel.getInstance().add(this);
 	}
 	
 	public Group getGroup() {
@@ -64,7 +62,7 @@ public class Bullet extends GameObject {
 	
 	public void paint(Graphics g){
 		if(!living){
-			gm.objects.remove(this);
+			GameModel.getInstance().remove(this);
 		}
 		switch (dir) {
 		case DOWN:

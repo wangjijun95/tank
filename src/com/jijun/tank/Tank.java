@@ -13,7 +13,6 @@ public class Tank extends GameObject {
 	Dir dir = Dir.DOWN;
 	private static final int SPEED = 5;
 	private boolean moving = true;
-	public GameModel gm;
 	FireStrategy fs;
 	private boolean living = true;
 	public static int WIDTH = ResourceMgr.goodTankU.getWidth();
@@ -23,12 +22,11 @@ public class Tank extends GameObject {
 	
 	private Random random = new Random();
 	
-	public Tank(int x, int y, Dir dir, Group group, GameModel gm) {
+	public Tank(int x, int y, Dir dir, Group group) {
 		this.x = x;
 		this.y = y;
 		this.dir = dir;
 		this.group = group;
-		this.gm = gm;
 		rec.x = this.x;
 		rec.y = this.y;
 		rec.width = WIDTH;
@@ -49,6 +47,7 @@ public class Tank extends GameObject {
 				e.printStackTrace();
 			}
 		}
+		GameModel.getInstance().add(this);
 	}
 	
 	public Group getGroup() {
@@ -99,7 +98,7 @@ public class Tank extends GameObject {
 		return SPEED;
 	}
 	public void paint(Graphics g) {
-		if(!living) gm.objects.remove(this);
+		if(!living) GameModel.getInstance().remove(this);
 		switch (dir) {
 		case LIFT:
 			g.drawImage(this.group == Group.GOOD ? ResourceMgr.goodTankL:ResourceMgr.badTankL, this.x, this.y, null);

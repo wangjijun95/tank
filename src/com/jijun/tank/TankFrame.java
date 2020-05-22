@@ -11,8 +11,9 @@ import java.awt.event.WindowEvent;
 
 public class TankFrame extends Frame{
 
-	public static final int GAME_WIDTH = 800, GAME_HEIGHT = 600;
-	GameModel gm = new GameModel();
+	public static final int GAME_WIDTH = 1080, GAME_HEIGHT = 700;
+
+	GameModel gm = GameModel.getInstance();
 
 	public TankFrame(){
 		setSize(GAME_WIDTH, GAME_HEIGHT);

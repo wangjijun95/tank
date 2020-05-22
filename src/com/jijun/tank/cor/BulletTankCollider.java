@@ -2,6 +2,7 @@ package com.jijun.tank.cor;
 
 import com.jijun.tank.Bullet;
 import com.jijun.tank.Explode;
+import com.jijun.tank.GameModel;
 import com.jijun.tank.Tank;
 
 public class BulletTankCollider implements Collider {
@@ -24,7 +25,7 @@ public class BulletTankCollider implements Collider {
             bullet.die();
             int eX = tank.getX() + Tank.WIDTH/2 - Explode.WIDTH/2;
             int eY = tank.getY() + Tank.HEIGHT/2 - Explode.HEIGHT/2;
-            tank.gm.objects.add(new Explode(eX, eY, tank.gm));
+            GameModel.getInstance().add(new Explode(eX, eY));
             return false;
         }
         return true;
