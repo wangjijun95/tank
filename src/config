@@ -1,0 +1,4 @@
+initTankCont=10
+goodFS=com.jijun.tank.strategy.FourDirFireStrategy
+goodFS1=com.jijun.tank.strategy.DoubleFireStrategy
+badFS=com.jijun.tank.strategy.DefaultFireStrategy
