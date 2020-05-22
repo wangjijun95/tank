@@ -13,7 +13,8 @@ public class DoubleFireStrategy implements FireStrategy {
 		int bY = t.getY() + Tank.HEIGHT/2 - Bullet.HEIGHT;
 		int bXR = t.getX() + Tank.WIDTH/2;
 		int bYR = t.getY() + Tank.HEIGHT/2;
-		t.t.gf.createBullet(bX, bY, t.getDir(), t.getGroup(), t.t);
+		new Bullet(bX, bY, t.getDir(), t.getGroup(), t.t);
+		new Bullet(bXR, bYR, t.getDir(), t.getGroup(), t.t);
 		if(t.getGroup() == Group.GOOD){new Thread(()->new Audio("audio/tank_fire.wav").play()).start();}
 
 	}

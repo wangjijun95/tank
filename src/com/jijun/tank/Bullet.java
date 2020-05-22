@@ -3,10 +3,8 @@ package com.jijun.tank;
 import java.awt.Graphics;
 import java.awt.Rectangle;
 
-import com.jijun.tank.abstractfactory.BaseBullet;
-import com.jijun.tank.abstractfactory.BaseTank;
 
-public class Bullet extends BaseBullet{
+public class Bullet{
 	private static final int SPEED = 10;
 	private boolean living = true;
 	private TankFrame tf = null;
@@ -107,14 +105,14 @@ public class Bullet extends BaseBullet{
 		if(x > TankFrame.GAME_WIDTH || x < 0 || y > TankFrame.GAME_HEIGHT || y < 0)
 			living = false;
 	}
-	public void collideWith(BaseTank tank) {
+	public void collideWith(Tank tank) {
 		if(tank.getGroup() == this.group) return;
 		if(this.rec.intersects(tank.rec)) {
 			tank.die();
 			this.die();
 			int eX = tank.getX() + Tank.WIDTH/2 - Explode.WIDTH/2;
 			int eY = tank.getY() + Tank.HEIGHT/2 - Explode.HEIGHT/2;
-			tf.explodes.add(tf.gf.createExplode(eX, eY, tf));
+			tf.explodes.add(new Explode(eX, eY, tf));
 		}
 	}
 	private void die() {

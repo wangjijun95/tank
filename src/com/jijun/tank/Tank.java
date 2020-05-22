@@ -4,10 +4,9 @@ import java.awt.Graphics;
 import java.awt.Rectangle;
 import java.util.Random;
 
-import com.jijun.tank.abstractfactory.BaseTank;
 import com.jijun.tank.strategy.FireStrategy;
 
-public class Tank extends BaseTank{
+public class Tank{
 	private int x=200, y=200;
 	Dir dir = Dir.DOWN;
 	private static final int SPEED = 5;
@@ -33,21 +32,21 @@ public class Tank extends BaseTank{
 		rec.width = WIDTH;
 		rec.height = HEIGHT;
 		
-//		if(group == Group.GOOD){
-//			try {
-//				String goodName = (String)PropertyMgr.getObject("goodFS");
-//				fs = (FireStrategy)Class.forName(goodName).newInstance();
-//			} catch (Exception e) {
-//				e.printStackTrace();
-//			}
-//		}else{
-//			String badFS = (String)PropertyMgr.getObject("badFS");
-//			try {
-//				fs = (FireStrategy)Class.forName(badFS).newInstance();
-//			} catch (Exception e) {
-//				e.printStackTrace();
-//			}
-//		}
+		if(group == Group.GOOD){
+			try {
+				String goodName = (String)PropertyMgr.getObject("goodFS1");
+				fs = (FireStrategy)Class.forName(goodName).newInstance();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}else{
+			String badFS = (String)PropertyMgr.getObject("badFS");
+			try {
+				fs = (FireStrategy)Class.forName(badFS).newInstance();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
 	}
 	
 	public Group getGroup() {
@@ -125,7 +124,7 @@ public class Tank extends BaseTank{
 		if(!moving){
 			return;
 		}
-		switch (dir){
+		switch (this.dir){
 			case LIFT:
 				x-=SPEED;
 				break;
@@ -164,17 +163,7 @@ public class Tank extends BaseTank{
 	}
 
 	public void fire() {
-//		fs.fire(this);
-		int bX = this.x + Tank.WIDTH/2 - Bullet.WIDTH/2;
-		int bY = this.y + Tank.HEIGHT/2 - Bullet.HEIGHT/2;
-		
-		Dir[] dirs = Dir.values();
-		for(Dir d : dirs){
-			t.gf.createBullet(bX, bY, d, this.getGroup(), this.t);
-		}
-		if(this.getGroup() == Group.GOOD){new Thread(()->new Audio("audio/tank_fire.wav").play()).start();}
-		
-		if(group == Group.GOOD) new Thread(()->new Audio("audio/tank_fire.wav").play()).start();
+		fs.fire(this);
 	}
 
 	public void die() {

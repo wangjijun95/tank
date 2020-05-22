@@ -11,22 +11,15 @@ import java.awt.event.WindowEvent;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.jijun.tank.abstractfactory.BaseBullet;
-import com.jijun.tank.abstractfactory.BaseExplode;
-import com.jijun.tank.abstractfactory.BaseTank;
-import com.jijun.tank.abstractfactory.DefaultFactory;
-import com.jijun.tank.abstractfactory.GameFactory;
-import com.jijun.tank.abstractfactory.RectFactory;
 
 public class TankFrame extends Frame{
 
 	Tank myTank = new Tank(200, 300, Dir.DOWN, Group.GOOD, this);
-	public List<BaseBullet> bullets = new ArrayList<>();
-	public List<BaseTank> tanks = new ArrayList<>();
-	public List<BaseExplode> explodes = new ArrayList<>();
+	public List<Bullet> bullets = new ArrayList<>();
+	public List<Tank> tanks = new ArrayList<>();
+	public List<Explode> explodes = new ArrayList<>();
 	public static final int GAME_WIDTH = 800, GAME_HEIGHT = 600;
 
-	public GameFactory gf = new RectFactory();
 
 	public TankFrame(){
 		setSize(GAME_WIDTH, GAME_HEIGHT);
@@ -62,8 +55,8 @@ public class TankFrame extends Frame{
 	public void paint(Graphics g) {
 		Color c = g.getColor();
 		g.setColor(Color.white);
-		g.drawString("子弹数量：" + bullets.size(), 20, 50);
-		g.drawString("敌人数量：" + tanks.size(), 20, 80);
+		g.drawString("子弹数量：" + bullets.size(), 20, 60);
+		g.drawString("坦克数量：" + tanks.size(), 20, 80);
 		g.drawString("爆炸数量：" + explodes.size(), 20, 100);
 		g.setColor(c);
 
@@ -113,7 +106,6 @@ public class TankFrame extends Frame{
 		}
 		@Override
 		public void keyReleased(KeyEvent e) {
-//			System.out.println("key released");
 			int key = e.getKeyCode();
 			switch (key) {
 				case KeyEvent.VK_LEFT:
