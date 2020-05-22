@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="611c9b60-f984-4152-abb0-edf1a830b2bb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/Bullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/Bullet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/Explode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/Explode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/Tank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/Tank.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/TankFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/TankFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/TankFrame$MyKeyListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/TankFrame$MyKeyListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/TankFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/TankFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/strategy/DefaultFireStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/strategy/DefaultFireStrategy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/strategy/DoubleFireStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/strategy/DoubleFireStrategy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/strategy/FourDirFireStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/strategy/FourDirFireStrategy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jijun/tank/Bullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jijun/tank/Bullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jijun/tank/Explode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jijun/tank/Explode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jijun/tank/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jijun/tank/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jijun/tank/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jijun/tank/Tank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jijun/tank/TankFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jijun/tank/TankFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jijun/tank/strategy/DefaultFireStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jijun/tank/strategy/DefaultFireStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jijun/tank/strategy/DoubleFireStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jijun/tank/strategy/DoubleFireStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jijun/tank/strategy/FourDirFireStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jijun/tank/strategy/FourDirFireStrategy.java" afterDir="false" />
-    </list>
+    <list default="true" id="611c9b60-f984-4152-abb0-edf1a830b2bb" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,7 +100,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1590113442624</updated>
-      <workItem from="1590113447019" duration="11670000" />
+      <workItem from="1590113447019" duration="11941000" />
     </task>
     <task id="LOCAL-00001" summary="恢复从工厂模式为策略模式">
       <created>1590119679438</created>
@@ -136,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590123317095</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="调停者模式">
+      <created>1590137036588</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1590137036588</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,7 +131,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="恢复从工厂模式为策略模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="恢复从工厂模式为策略模式" />
+    <MESSAGE value="调停者模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="调停者模式" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="24" key="#Notifications" timestamp="1590122608613">
@@ -159,10 +147,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="112" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1366.728@0.0.1366.728" timestamp="1590118337201" />
-    <state x="352" y="0" key="CommitChangelistDialog2" timestamp="1590123314531">
+    <state x="352" y="0" key="CommitChangelistDialog2" timestamp="1590137033393">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="352" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590123314531" />
+    <state x="352" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590137033393" />
     <state x="463" y="107" key="FileChooserDialogImpl" timestamp="1590117508263">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -211,10 +199,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="186" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1590117471856" />
-    <state x="275" y="99" key="Vcs.Push.Dialog.v2" timestamp="1590123403527">
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2" timestamp="1590137044759">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590123403527" />
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590137044759" />
     <state x="511" y="100" key="VcsDiffUtil.ChangesDialog" timestamp="1590119620784">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
