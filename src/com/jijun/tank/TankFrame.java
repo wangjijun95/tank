@@ -14,12 +14,8 @@ import java.util.List;
 
 public class TankFrame extends Frame{
 
-	Tank myTank = new Tank(200, 300, Dir.DOWN, Group.GOOD, this);
-	public List<Bullet> bullets = new ArrayList<>();
-	public List<Tank> tanks = new ArrayList<>();
-	public List<Explode> explodes = new ArrayList<>();
 	public static final int GAME_WIDTH = 800, GAME_HEIGHT = 600;
-
+	GameModel gm = new GameModel();
 
 	public TankFrame(){
 		setSize(GAME_WIDTH, GAME_HEIGHT);
@@ -32,7 +28,6 @@ public class TankFrame extends Frame{
 				System.exit(0);
 			}
 		});
-
 		addKeyListener(new MyKeyListener());
 	}
 
@@ -53,27 +48,7 @@ public class TankFrame extends Frame{
 
 	@Override
 	public void paint(Graphics g) {
-		Color c = g.getColor();
-		g.setColor(Color.white);
-		g.drawString("子弹数量：" + bullets.size(), 20, 60);
-		g.drawString("坦克数量：" + tanks.size(), 20, 80);
-		g.drawString("爆炸数量：" + explodes.size(), 20, 100);
-		g.setColor(c);
-
-		myTank.paint(g);
-		for(int i=0; i<bullets.size(); i++) {
-			bullets.get(i).paint(g);
-		}
-		for(int i=0; i<tanks.size(); i++){
-			tanks.get(i).paint(g);
-		}
-		for(int i=0; i<bullets.size(); i++){
-			for(int j=0; j<tanks.size(); j++)
-				bullets.get(i).collideWith(tanks.get(j));
-		}
-		for (int i = 0; i < explodes.size(); i++) {
-			explodes.get(i).paint(g);
-		}
+		gm.paint(g);
 	}
 
 	class MyKeyListener extends KeyAdapter {
@@ -121,7 +96,7 @@ public class TankFrame extends Frame{
 					bD = false;
 					break;
 				case KeyEvent.VK_CONTROL:
-					myTank.fire();
+					gm.getTank().fire();
 				default:
 					break;
 			}
@@ -130,13 +105,13 @@ public class TankFrame extends Frame{
 
 		public void setMainTankDir(){
 			if(!bL && !bR && !bU && !bD){
-				myTank.setMoving(false);
+				gm.getTank().setMoving(false);
 			}else{
-				myTank.setMoving(true);
-				if(bL) myTank.setDir(Dir.LIFT);
-				if(bR) myTank.setDir(Dir.RIGTH);
-				if(bU) myTank.setDir(Dir.UP);
-				if(bD) myTank.setDir(Dir.DOWN);
+				gm.getTank().setMoving(true);
+				if(bL) gm.getTank().setDir(Dir.LIFT);
+				if(bR) gm.getTank().setDir(Dir.RIGTH);
+				if(bU) gm.getTank().setDir(Dir.UP);
+				if(bD) gm.getTank().setDir(Dir.DOWN);
 			}
 
 		}

@@ -6,12 +6,12 @@ import java.util.Random;
 
 import com.jijun.tank.strategy.FireStrategy;
 
-public class Tank{
+public class Tank extends GameObject{
 	private int x=200, y=200;
 	Dir dir = Dir.DOWN;
 	private static final int SPEED = 5;
 	private boolean moving = true;
-	public TankFrame t;
+	public GameModel gm;
 	FireStrategy fs;
 	private boolean living = true;
 	public static int WIDTH = ResourceMgr.goodTankU.getWidth();
@@ -21,12 +21,12 @@ public class Tank{
 	
 	private Random random = new Random();
 	
-	public Tank(int x, int y, Dir dir, Group group, TankFrame t) {
+	public Tank(int x, int y, Dir dir, Group group, GameModel gm) {
 		this.x = x;
 		this.y = y;
 		this.dir = dir;
 		this.group = group;
-		this.t = t;
+		this.gm = gm;
 		rec.x = this.x;
 		rec.y = this.y;
 		rec.width = WIDTH;
@@ -97,7 +97,7 @@ public class Tank{
 		return SPEED;
 	}
 	public void paint(Graphics g) {
-		if(!living) t.tanks.remove(this);
+		if(!living) gm.tanks.remove(this);
 		switch (dir) {
 		case LIFT:
 			g.drawImage(this.group == Group.GOOD ? ResourceMgr.goodTankL:ResourceMgr.badTankL, this.x, this.y, null);
