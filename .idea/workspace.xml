@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="611c9b60-f984-4152-abb0-edf1a830b2bb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/META-INF/tank.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/audio/explode.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/audio/tank_fire.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/audio/tank_move.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/audio/war1.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/Audio.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/Bullet$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/Bullet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/Dir.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/Explode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/Group.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/ImageUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/PropertyMgr.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/ResourceMgr.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/Tank$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/Tank.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/TankFrame$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/TankFrame$MyKeyListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/TankFrame.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/strategy/DefaultFireStrategy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/strategy/DoubleFireStrategy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/strategy/FireStrategy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/strategy/FourDirFireStrategy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/test/ImageTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/BadTank1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/BadTank2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/GoodTank1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/GoodTank2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/bulletD.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/bulletL.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/bulletR.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/bulletU.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/bulletU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/e9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/missileLD.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/missileLU.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/missileRD.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/missileRU.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/square0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/square1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/square2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/square3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/square4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/square5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/square6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/tank.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/tankD.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/tankL.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/tankLD.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/tankLU.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/tankR.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/tankRD.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/tankRU.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/tank/images/tankU.gif" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="E:\IdeaProjects\mashibing\tank" />
+        <option value="E:\IdeaProjects\mashibing\tank\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1cF9ObCrkvPjcVqiTK1xglkfNR2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\mashibing\tank\src\com\jijun\tank" />
+      <recent name="E:\IdeaProjects\mashibing\tank\src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jijun.tank.Main" />
+      <module name="tank" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jijun.tank.strategy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="611c9b60-f984-4152-abb0-edf1a830b2bb" name="Default Changelist" comment="" />
+      <created>1590113442624</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590113442624</updated>
+      <workItem from="1590113447019" duration="7903000" />
+    </task>
+    <task id="LOCAL-00001" summary="恢复从工厂模式为策略模式">
+      <created>1590119679438</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590119679438</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="恢复从工厂模式为策略模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="恢复从工厂模式为策略模式" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="24" key="#Notifications" timestamp="1590122608613">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="24" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1590122608613" />
+    <state x="428" y="171" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590113678261">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="428" y="171" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1590113678261" />
+    <state x="413" y="112" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1590118337201">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="112" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1366.728@0.0.1366.728" timestamp="1590118337201" />
+    <state x="352" y="0" key="CommitChangelistDialog2" timestamp="1590119676888">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="352" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590119676888" />
+    <state x="463" y="107" key="FileChooserDialogImpl" timestamp="1590117508263">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590117508263" />
+    <state x="546" y="258" key="Github.ShareDialog" timestamp="1590117577235">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="546" y="258" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1590117577235" />
+    <state x="497" y="71" key="Github.UntrackedFilesDialog" timestamp="1590117589767">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="497" y="71" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1590117589767" />
+    <state width="1322" height="174" key="GridCell.Tab.0.bottom" timestamp="1590122298727">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590122298727" />
+    <state width="1322" height="174" key="GridCell.Tab.0.center" timestamp="1590122298727">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590122298727" />
+    <state width="1322" height="174" key="GridCell.Tab.0.left" timestamp="1590122298727">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590122298727" />
+    <state width="1322" height="174" key="GridCell.Tab.0.right" timestamp="1590122298727">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590122298727" />
+    <state width="1322" height="217" key="GridCell.Tab.1.bottom" timestamp="1590119052546">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="217" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590119052546" />
+    <state width="1322" height="217" key="GridCell.Tab.1.center" timestamp="1590119052546">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="217" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1590119052546" />
+    <state width="1322" height="217" key="GridCell.Tab.1.left" timestamp="1590119052546">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="217" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1590119052546" />
+    <state width="1322" height="217" key="GridCell.Tab.1.right" timestamp="1590119052546">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="217" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1590119052546" />
+    <state x="186" y="0" key="SettingsEditor" timestamp="1590117471856">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="186" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1590117471856" />
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2" timestamp="1590122710779">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590122710779" />
+    <state x="511" y="100" key="VcsDiffUtil.ChangesDialog" timestamp="1590119620784">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="511" y="100" key="VcsDiffUtil.ChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1590119620784" />
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1590113926652">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1590113926652" />
+    <state x="381" y="264" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1590113698446">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="381" y="264" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.728@0.0.1366.728" timestamp="1590113698446" />
+    <state x="472" y="165" key="git4idea.merge.GitMergeDialog" timestamp="1590119658448">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="472" y="165" key="git4idea.merge.GitMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1590119658448" />
+    <state x="494" y="215" key="git4idea.ui.GitTagDialog" timestamp="1590122727167">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="494" y="215" key="git4idea.ui.GitTagDialog/0.0.1366.728@0.0.1366.728" timestamp="1590122727167" />
+  </component>
+</project>
