@@ -8,7 +8,7 @@ import com.jijun.tank.cor.GameObject;
 import com.jijun.tank.strategy.FireStrategy;
 
 public class Tank extends GameObject {
-	private int x=200, y=200;
+
 	int oldX,oldY;
 	Dir dir = Dir.DOWN;
 	private static final int SPEED = 5;
@@ -180,5 +180,15 @@ public class Tank extends GameObject {
 	public void backXY() {
 		x = oldX;
 		y = oldY;
+	}
+
+	@Override
+	public int getWidth() {
+		return WIDTH;
+	}
+
+	@Override
+	public int getHeight() {
+		return HEIGHT;
 	}
 }

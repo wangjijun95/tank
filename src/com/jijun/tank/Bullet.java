@@ -13,8 +13,7 @@ public class Bullet extends GameObject {
 	public static int HEIGHT = ResourceMgr.bulletD.getHeight();
 	public Group group = Group.GOOD;
 	public Rectangle rec = new Rectangle();
-	
-	private int x,y;
+
 	private Dir dir;
 	public Bullet(int x, int y, Dir dir, Group group) {
 		super();
@@ -82,7 +81,17 @@ public class Bullet extends GameObject {
 		}
 		move();
 	}
-	
+
+	@Override
+	public int getWidth() {
+		return WIDTH;
+	}
+
+	@Override
+	public int getHeight() {
+		return HEIGHT;
+	}
+
 	private void move(){
 		switch (dir){
 			case LIFT:
