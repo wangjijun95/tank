@@ -1,5 +1,9 @@
 package com.jijun.tank;
 
+import com.jijun.tank.observe.TankFireEvent;
+import com.jijun.tank.observe.TankFireHandler;
+import com.jijun.tank.observe.TankFireObserver;
+
 import java.awt.Color;
 import java.awt.Frame;
 import java.awt.Graphics;
@@ -14,6 +18,7 @@ public class TankFrame extends Frame{
 	public static final int GAME_WIDTH = 1080, GAME_HEIGHT = 700;
 
 	GameModel gm = GameModel.getInstance();
+	TankFireObserver tf = new TankFireHandler();
 
 	public TankFrame(){
 		setSize(GAME_WIDTH, GAME_HEIGHT);
@@ -94,7 +99,8 @@ public class TankFrame extends Frame{
 					bD = false;
 					break;
 				case KeyEvent.VK_CONTROL:
-					gm.getTank().fire();
+//					gm.getTank().fire();
+					tf.actionOnFire(new TankFireEvent(gm.getTank()));
 				default:
 					break;
 			}
