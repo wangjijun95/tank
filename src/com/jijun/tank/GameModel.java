@@ -3,11 +3,12 @@ package com.jijun.tank;
 import com.jijun.tank.cor.*;
 
 import java.awt.*;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GameModel {
-    private static final GameModel INSTANCE = new GameModel();
+public class GameModel{
+    private static GameModel INSTANCE = new GameModel();
     static{
         INSTANCE.init();
     }
@@ -63,6 +64,42 @@ public class GameModel {
         for (int i = 0; i < objects.size(); i++) {
             for (int j = i+1; j < objects.size(); j++) {
                 collide.collide(objects.get(i),objects.get(j));
+            }
+        }
+    }
+
+    public void save() {
+        File f = new File("d:/myTank.data");
+        ObjectOutputStream oos = null;
+        try{
+            oos = new ObjectOutputStream(new FileOutputStream(f));
+            oos.writeObject(myTank);
+            oos.writeObject(objects);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }finally {
+            try {
+                oos.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public void load() {
+        File f = new File("d:/myTank.data");
+        ObjectInputStream ois = null;
+        try {
+            ois = new ObjectInputStream(new FileInputStream(f));
+            myTank = (Tank)ois.readObject();
+            objects = (List)ois.readObject();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }finally {
+            try {
+                ois.close();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         }
     }

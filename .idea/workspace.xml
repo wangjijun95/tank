@@ -3,13 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="611c9b60-f984-4152-abb0-edf1a830b2bb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/Tank$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/Tank$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/Tank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/Tank.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/TankFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/TankFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/TankFrame$MyKeyListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/TankFrame$MyKeyListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/TankFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tank/com/jijun/tank/TankFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jijun/tank/Tank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jijun/tank/Tank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jijun/tank/GameModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jijun/tank/GameModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/jijun/tank/TankFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jijun/tank/TankFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jijun/tank/cor/Collider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jijun/tank/cor/Collider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jijun/tank/cor/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jijun/tank/cor/GameObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jijun/tank/observe/TankFireObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jijun/tank/observe/TankFireObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jijun/tank/strategy/FireStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jijun/tank/strategy/FireStrategy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +114,8 @@
       <updated>1590113442624</updated>
       <workItem from="1590113447019" duration="18196000" />
       <workItem from="1590151114336" duration="5185000" />
-      <workItem from="1590206578612" duration="5340000" />
+      <workItem from="1590206578612" duration="6040000" />
+      <workItem from="1590309211787" duration="4045000" />
     </task>
     <task id="LOCAL-00001" summary="恢复从工厂模式为策略模式">
       <created>1590119679438</created>
@@ -173,7 +173,21 @@
       <option name="project" value="LOCAL" />
       <updated>1590211675021</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="观察者模式">
+      <created>1590249348356</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1590249348356</updated>
+    </task>
+    <task id="LOCAL-00010" summary="观察者模式">
+      <created>1590249362005</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1590249362005</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,7 +200,8 @@
     <MESSAGE value="使用责任链模式增加判断" />
     <MESSAGE value="重构代码" />
     <MESSAGE value="添加装饰者模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加装饰者模式" />
+    <MESSAGE value="观察者模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="观察者模式" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="24" key="#Notifications" timestamp="1590122608613">
@@ -205,14 +220,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="112" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1366.728@0.0.1366.728" timestamp="1590118337201" />
-    <state x="282" y="0" key="CommitChangelistDialog2" timestamp="1590249345446">
+    <state x="282" y="0" key="CommitChangelistDialog2" timestamp="1590249359715">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="282" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590249345446" />
+    <state x="282" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1590249359715" />
     <state x="463" y="107" key="FileChooserDialogImpl" timestamp="1590117508263">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1590117508263" />
+    <state x="496" y="261" key="Github.CreateGistDialog" timestamp="1590311163562">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="496" y="261" key="Github.CreateGistDialog/0.0.1366.728@0.0.1366.728" timestamp="1590311163562" />
     <state x="546" y="258" key="Github.ShareDialog" timestamp="1590117577235">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -221,22 +240,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="497" y="71" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1590117589767" />
-    <state width="1322" height="113" key="GridCell.Tab.0.bottom" timestamp="1590248150559">
+    <state width="1322" height="113" key="GridCell.Tab.0.bottom" timestamp="1590311427368">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="113" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590248150559" />
-    <state width="1322" height="113" key="GridCell.Tab.0.center" timestamp="1590248150558">
+    <state width="1322" height="113" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590311427368" />
+    <state width="1322" height="113" key="GridCell.Tab.0.center" timestamp="1590311427368">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="113" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590248150558" />
-    <state width="1322" height="113" key="GridCell.Tab.0.left" timestamp="1590248150558">
+    <state width="1322" height="113" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590311427368" />
+    <state width="1322" height="113" key="GridCell.Tab.0.left" timestamp="1590311427368">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="113" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590248150558" />
-    <state width="1322" height="113" key="GridCell.Tab.0.right" timestamp="1590248150558">
+    <state width="1322" height="113" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590311427368" />
+    <state width="1322" height="113" key="GridCell.Tab.0.right" timestamp="1590311427368">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="113" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590248150558" />
+    <state width="1322" height="113" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590311427368" />
     <state width="1322" height="216" key="GridCell.Tab.1.bottom" timestamp="1590139844214">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -257,10 +276,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="186" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1590117471856" />
-    <state x="275" y="99" key="Vcs.Push.Dialog.v2" timestamp="1590211681358">
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2" timestamp="1590249367930">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590211681358" />
+    <state x="275" y="99" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1590249367930" />
     <state x="511" y="100" key="VcsDiffUtil.ChangesDialog" timestamp="1590119620784">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -273,10 +292,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1590113926652" />
-    <state x="375" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1590206680184">
+    <state x="375" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1590309203616">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="375" y="190" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1590206680184" />
+    <state x="375" y="190" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1590309203616" />
     <state x="381" y="264" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1590113698446">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -297,5 +316,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1590141226535" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/tank$Main.ic" NAME="Main Coverage Results" MODIFIED="1590311112200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.jijun.tank.strategy.*</FILTER>
+    </SUITE>
   </component>
 </project>

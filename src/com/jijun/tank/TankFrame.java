@@ -12,8 +12,10 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.io.File;
+import java.io.Serializable;
 
-public class TankFrame extends Frame{
+public class TankFrame extends Frame {
 
 	public static final int GAME_WIDTH = 1080, GAME_HEIGHT = 700;
 
@@ -101,6 +103,13 @@ public class TankFrame extends Frame{
 				case KeyEvent.VK_CONTROL:
 //					gm.getTank().fire();
 					tf.actionOnFire(new TankFireEvent(gm.getTank()));
+					break;
+                case KeyEvent.VK_S:
+                    gm.save();
+                    break;
+				case  KeyEvent.VK_L:
+					gm.load();
+					break;
 				default:
 					break;
 			}
@@ -120,4 +129,6 @@ public class TankFrame extends Frame{
 
 		}
 	}
+
+
 }
